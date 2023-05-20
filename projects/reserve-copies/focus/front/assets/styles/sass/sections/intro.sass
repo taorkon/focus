@@ -1,0 +1,97 @@
+//intro
+
+@import "../preprocess/general"
+
+@import "../preprocess/colors"
+@import "../preprocess/fonts"
+@import "../preprocess/widths"
+@import "../preprocess/reset-link"
+@import "../preprocess/reset-list"
+
+.intro
+
+    &__container
+        max-width: $large
+
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)), url("../../images/pictures/intro-background.jpg")
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    &__navbar
+        max-width: $medium
+        width: 85vw
+        padding-top: 20px
+
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+    &__left
+        display: flex
+        align-items: center
+        gap: 40px
+
+    &__nav
+        @include ResetList
+
+        display: flex
+        gap: 25px
+
+    &__nav-link
+        @include ResetLink
+        @include inter-600-16
+
+        color: $white
+
+    &__right
+        display: flex
+        align-items: center
+        gap: 10px
+
+    &__userinfo-holder
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+
+    &__username-link
+        @include ResetLink
+        @include inter-400-16
+
+        color: $white
+
+    &__userstatus-holder
+        @include inter-400-14
+
+        color: $white
+
+    &__userpic
+        border-radius: 50%
+
+    &__content-holder
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        padding-top: 295px
+        padding-bottom: 275px
+
+    &__text-holder
+        width: 42%
+
+    &__text
+        @include inter-600-20-loose
+
+        color: $white
+        text-align: center
+
+    &__search-holder
+        height: 130px
+        width:100%
+
+        background: rgba(0, 0, 0, 0.4)
+        backdrop-filter: blur(5px)

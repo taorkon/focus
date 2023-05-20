@@ -1,0 +1,66 @@
+//types
+@import "../preprocess/general"
+
+@import "../preprocess/colors"
+@import "../preprocess/fonts"
+@import "../preprocess/widths"
+@import "../preprocess/reset-link"
+
+.types
+    display: flex
+    justify-content: center
+
+    &__container
+        max-width: $medium
+
+        padding-top: 50px
+        padding-bottom: 50px
+
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        gap: 30px
+        row-gap: 30px
+
+    &__card
+        width: 421px
+        height: 298px
+        border-radius: 4px
+
+        display: flex
+        align-items: flex-end
+
+        &--1
+            background-image: url("../../images/pictures/card-1.jpg")
+        &--2
+            background-image: url("../../images/pictures/card-2.jpg")
+        &--3
+            background-image: url("../../images/pictures/card-3.jpg")
+        &--4
+            background-image: url("../../images/pictures/card-4.jpg")
+        &--5
+            background-image: url("../../images/pictures/card-5.jpg")
+        &--6
+            background-image: url("../../images/pictures/card-6.jpg")
+
+    &__blur
+        height: 62px
+        width: 100%
+        border-radius: 0 0 4px 4px
+
+        background: rgba(0, 0, 0, 0.4)
+        backdrop-filter: blur(5px)
+
+        display: flex
+        align-items: center
+
+    &__text-holder
+        padding-left: 1rem
+
+    &__text
+        @include ResetLink
+        @include inter-400-16
+
+        color:$white
+        margin: 0
+        

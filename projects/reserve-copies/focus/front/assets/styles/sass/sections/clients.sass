@@ -1,0 +1,36 @@
+//clients
+@import "../preprocess/general"
+
+@import "../preprocess/colors"
+@import "../preprocess/fonts"
+@import "../preprocess/widths"
+
+.clients
+    padding-top:80px
+
+    display: flex
+    justify-content: center
+    align-items: center
+
+    &__container
+        max-width: $large
+        width: 100vw
+
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    &__title-holder
+        max-width: $small
+        width: 72vw
+
+    &__content-holder
+        width: 100%
+        height: 884px
+        margin-top: 50px
+
+        background-image: url('../../images/icons/clients.svg')
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover

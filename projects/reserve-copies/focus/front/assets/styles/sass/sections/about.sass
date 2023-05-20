@@ -1,0 +1,72 @@
+//about
+@import "../preprocess/general"
+
+@import "../preprocess/colors"
+@import "../preprocess/fonts"
+@import "../preprocess/widths"
+
+.about
+    display: flex
+    justify-content: center
+    align-items: center
+
+    &__container
+        max-width: $medium
+        width: 85vw
+        height: 518px
+        border-radius: 50px
+        margin-top: 142px
+
+        background-color: $paleBlue
+
+        display: flex
+        justify-content: flex-end
+        align-items: center
+
+    &__content-holder
+        width: 70%
+        padding-left: 5%
+
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+
+    &__title
+        @include inter-600-40
+
+        color: $darkGrey
+
+    &__text
+        @include inter-400-20
+
+        color: $grey
+
+    &__button
+        width: 227px
+        height: 48px
+
+        background: #0973A0
+        border: 0
+        border-radius: 8px
+
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 14px 32px
+        gap: 12px
+
+    &__button-text
+        @include inter-600-16
+
+        color: $white
+        
+    &__image-holder
+        height: 100%
+
+        display: flex
+        align-items: flex-end
+
+    &__image
+
+        border-radius: 0 0 50px 0

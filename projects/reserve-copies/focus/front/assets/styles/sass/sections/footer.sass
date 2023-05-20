@@ -1,0 +1,100 @@
+//footer
+
+@import "../preprocess/general"
+
+@import "../preprocess/colors"
+@import "../preprocess/fonts"
+@import "../preprocess/widths"
+
+@import "../preprocess/reset-link"
+@import "../preprocess/reset-list"
+
+.footer
+    background-color: $blackish
+    padding-top: 50px
+    padding-bottom: 20px
+
+    display: flex
+    justify-content: center
+    align-items: center
+
+    &__container
+        max-width: $medium
+
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    &__content-holder
+        margin-top: 50px
+
+        display: flex
+        justify-content: center
+        align-items: flex-start
+
+        gap: 45px
+
+    &__title
+        @include inter-600-18
+
+        color: $white
+
+    &__content
+        max-width: 205px
+        width: 11vw
+
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+
+    &__list
+        @include ResetList
+
+    &__list-item
+        padding-bottom: 10px
+        
+    &__link
+        @include ResetLink
+        @include  inter-400-16
+        
+        color: $white
+
+    &__down
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+    &__legal-holder
+        max-width: $XSmall
+        width: 60vw
+
+        margin-top: 50px
+
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &__legal-list
+        @include ResetList
+
+        display: flex
+        gap: 50px
+
+    &__legal-link
+        @include ResetLink
+        @include  inter-500-16
+        
+        color: $white
+
+    &__line
+        max-width: $XSmall
+        width: 60vw
+
+        margin: 30px 0 30px 0
+
+    &__copy
+        @include  inter-400-12
+        
+        color: $white

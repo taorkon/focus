@@ -1,0 +1,45 @@
+//header
+
+@import "../preprocess//general"
+
+@import "../preprocess/colors"
+@import "../preprocess/fonts"
+@import "../preprocess/widths"
+@import "../preprocess/reset-link"
+@import "../preprocess/reset-list"
+
+.header
+    //min-width: 100vw
+    //width: 100vw
+    max-width: 100vw
+
+    display: flex
+    justify-content: center
+
+    &__container
+        max-width: $medium
+        width: 85vw
+
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        margin-top: 10px
+        margin-bottom: 10px
+
+    &__contacts
+        @include ResetList
+
+        display: flex
+        gap: 30px
+
+    &__item
+        display: flex
+        align-items: center
+        gap: 10px
+
+    &__link
+        @include ResetLink
+        @include inter-500-14
+
+        color: $darkGrey
